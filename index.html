@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn For Loops</title>
+</head>
+
+<body>
+    <b> Natural Number Sequence <br></b>
+    <label for="input_stop">Enter Any Number</label>
+    <input type="number" id="input_stop">
+    <button onclick="sequence()">Submit</button>
+    <script>
+        sequence = () => {
+            var stop = Number(document.getElementById("input_stop").value)
+            for (var i = 0; i < stop; i++) {
+                document.write(i)
+                // document.write("Timedoor")   <--Challenge
+                document.write("<br>")
+            }
+        }
+    </script>
+</body>
+
+</html>
